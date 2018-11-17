@@ -1,0 +1,116 @@
+html, body, #map-canvas {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.controls {
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 48px;
+  outline: none;
+
+}
+
+.favourite {
+  color: #8C8C8C;
+  font-size: 15px;
+  font-family: Roboto;
+  padding: 0 11px 0 13px;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 300;
+  width: 100%;
+  font-size: 18px;
+  border-top: 1px solid #e6e6e6;
+  cursor: default;
+  direction: ltr;
+  text-align: left;
+}
+
+.favourite:hover {
+  background-color: #e6e6e6;
+}
+
+.favourite-item-container {
+  margin-top: 1px;
+  background-color: #fff;
+  border-radius: 0 0 2px 2px;
+  font-size: 15px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.humberger{
+  padding: 12px 16px;
+  position: absolute;
+  outline: none;
+}
+
+#pac-input {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  position: absolute;
+  width: 100%;
+  padding: 0 11px 0 53px;
+  text-overflow: ellipsis;
+
+}
+
+#container {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 10px;
+  width: 400px;
+  margin-left: 12px;
+  left: 10px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* responsive for Tablet version */
+@media screen and (min-width: 769px) {
+  .favourite-item-container-responsive-hide{
+      display: none;
+  }
+  .favourite-item-container-responsive-show{
+      display: block;
+  }
+  .favourite-item-container-responsive{
+      display: block;
+  }
+}
+
+/* responsive for Mobile version */
+@media screen and (max-width: 768px) {
+  .favourite-item-container-responsive-hide{
+      display: none;
+  }
+  .favourite-item-container-responsive-show{
+      display: block;
+  }
+  .favourite-item-container-responsive{
+      display: none;
+  }
+}
